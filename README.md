@@ -47,3 +47,7 @@ After running the server, open your web browser and navigate to https://localhos
 
 ---
 
+> ### NOTE: It installs PHP 8.3. If you need another version of PHP, you can compile and use FrankenPHP and change the Composer version.
+
+---
+
