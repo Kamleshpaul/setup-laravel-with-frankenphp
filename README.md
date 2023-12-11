@@ -4,7 +4,7 @@
 
 Navigate to the root of your Laravel project and clone the repository:
 ```sh
-git clone https://github.com/Kamleshpaul/steup-laravel-with-frankenphp.git
+git clone https://github.com/Kamleshpaul/setup-laravel-with-frankenphp.git
 ```
 
 
