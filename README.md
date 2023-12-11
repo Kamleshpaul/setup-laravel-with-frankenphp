@@ -39,7 +39,7 @@ This script will download `composer.phar` for Composer and FrankenPHP for `php-c
 ### Step 5: Run FrankenPHP Server
 To run the FrankenPHP server, use the following command:
 ```sh
-./server/frankenphp run
+cd server && ./frankenphp run
 ```
 
 ### Step 6: Open Localhost
