@@ -25,13 +25,10 @@ echo "DOWNLOAD_URL: ${DOWNLOAD_URL}"
 FILENAME="${SCRIPT_DIR}/frankenphp"
 
 echo "Downloading ${FILENAME}..."
-wget -q -O "${FILENAME}" "${DOWNLOAD_URL}" || { echo "Failed to download FrankenPHP."; exit 1; }
+wget -O "${FILENAME}" "${DOWNLOAD_URL}" || { echo "Failed to download FrankenPHP."; exit 1; }
 
 if [ $? -eq 0 ]; then
-  echo "Download complete. Extracting files..."
-  tar xf "${FILENAME}" --strip-components=1 -C "${SCRIPT_DIR}" || { echo "Failed to extract FrankenPHP."; exit 1; }
-  rm "${FILENAME}"
-  echo "Extraction complete. Installed file saved as ${SCRIPT_DIR}/frankenphp"
+  echo "Download complete. Saved as $FILENAME"
 else
   echo "Download failed."
   exit 1
