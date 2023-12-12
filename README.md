@@ -37,7 +37,7 @@ Run the download script for Linux:
 This script will download `composer.phar` for Composer and FrankenPHP for `php-cli`, `php`, and `Caddy server`.
 
 ### Step 5: Install Composer dependency
-To run the FrankenPHP server, use the following command:
+To install all the dependency, use the following command:
 ```sh
  ./server/frankenphp php-cli ./server/composer.phar install
 ```
