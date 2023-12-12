@@ -9,22 +9,22 @@ git clone https://github.com/Kamleshpaul/setup-laravel-with-frankenphp.git
 
 
 ### Step 2: Move the Cloned Repository
-Move the cloned repository to a directory named "server":
+Move the cloned repository to root directory:
 ```sh
-mv steup-laravel-with-frankenphp server
+mv steup-laravel-with-frankenphp .
 ```
 
 
 ### Step 3: Make Download Script Executable
 Make the download script executable:
 ```sh
-chmod +x server/download.sh
+chmod +x download.sh
 ```
 
 ### Step 4: Download Composer and FrankenPHP
 Run the download script:
 ```sh
-./server/download.sh 
+./download.sh 
 ```
 
 
@@ -33,17 +33,28 @@ This script will download `composer.phar` for Composer and FrankenPHP for `php-c
 ### Step 5: Install Composer dependency
 To install all the dependency, use the following command:
 ```sh
- ./server/frankenphp php-cli ./server/composer.phar install
+ ./frankenphp php-cli ./composer.phar install
 ```
 
 ### Step 6: Run FrankenPHP Server
 To run the FrankenPHP server, use the following command:
 ```sh
-cd server && ./frankenphp run
+./frankenphp run
 ```
 
 ### Step 7: Open Localhost
 After running the server, open your web browser and navigate to https://localhost
+
+
+### Useful command 
+
+```sh
+./frankenphp php-cli ./composer.phar (install | update | dump-autoload | require | remove)
+```
+
+```sh
+./frankenphp php-cli php artisan about
+```
 
 ---
 
