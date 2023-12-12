@@ -59,7 +59,7 @@ composer.phar
 ```
 
 ```sh
-./frankenphp php-cli php artisan about
+./frankenphp php-cli artisan about
 ```
 
 ---
