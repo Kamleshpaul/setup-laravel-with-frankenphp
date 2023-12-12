@@ -11,7 +11,7 @@ git clone https://github.com/Kamleshpaul/setup-laravel-with-frankenphp.git
 ### Step 2: Move the Cloned Repository
 Move the cloned repository to root directory:
 ```sh
-mv steup-laravel-with-frankenphp .
+mv setup-laravel-with-frankenphp/{Caddyfile,download.sh} ./ && rm -rf setup-laravel-with-frankenphp
 ```
 
 
@@ -58,7 +58,7 @@ After running the server, open your web browser and navigate to https://localhos
 
 ---
 
-> ### NOTE: It installs PHP 8.3. If you need another version of PHP, you can compile and use FrankenPHP and change the Composer version.
+> *NOTE:* It installs PHP 8.3. If you need another version of PHP, you can compile and use FrankenPHP and change the Composer version.
 
 ---
 
