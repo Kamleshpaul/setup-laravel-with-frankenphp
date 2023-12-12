@@ -36,13 +36,19 @@ Run the download script for Linux:
 
 This script will download `composer.phar` for Composer and FrankenPHP for `php-cli`, `php`, and `Caddy server`.
 
-### Step 5: Run FrankenPHP Server
+### Step 5: Install Composer dependency
+To run the FrankenPHP server, use the following command:
+```sh
+ ./server/frankenphp php-cli ./server/composer.phar install
+```
+
+### Step 6: Run FrankenPHP Server
 To run the FrankenPHP server, use the following command:
 ```sh
 cd server && ./frankenphp run
 ```
 
-### Step 6: Open Localhost
+### Step 7: Open Localhost
 After running the server, open your web browser and navigate to https://localhost
 
 ---
