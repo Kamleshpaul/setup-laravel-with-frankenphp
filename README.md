@@ -22,17 +22,11 @@ chmod +x server/download.sh
 ```
 
 ### Step 4: Download Composer and FrankenPHP
-For Mac:
-Run the download script for Mac:
+Run the download script:
 ```sh
-./server/download.sh mac
+./server/download.sh 
 ```
 
-For Linux:
-Run the download script for Linux:
-```sh
-./server/download.sh linux
-```
 
 This script will download `composer.phar` for Composer and FrankenPHP for `php-cli`, `php`, and `Caddy server`.
 
