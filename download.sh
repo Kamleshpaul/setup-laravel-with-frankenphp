@@ -4,20 +4,18 @@ COMPOSER_VERSION=2.6.6
 
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-if [ -z "$1" ]; then
-  echo "Usage: $0 <os>"
-  echo "Specify 'linux' or 'mac' as the OS parameter."
-  exit 1
+case $(uname) in
+    Linux*)     machine=linux;;
+    Darwin*)    machine=mac;;
+    *)          machine='unknown';;
+esac
+
+if [ "$machine" == "unknown" ]; then
+    echo "Unsupported operating system. This script only supports linux and mac."
+    exit 1
 fi
 
-if [ "$1" == "linux" ]; then
-  DOWNLOAD_URL="https://github.com/dunglas/frankenphp/releases/download/v1.0.0/frankenphp-linux-x86_64"
-elif [ "$1" == "mac" ]; then
-  DOWNLOAD_URL="https://github.com/dunglas/frankenphp/releases/download/v1.0.0/frankenphp-mac-arm64"
-else
-  echo "Unsupported OS. Specify 'linux' or 'mac' as the OS parameter."
-  exit 1
-fi
+DOWNLOAD_URL="https://github.com/dunglas/frankenphp/releases/download/v1.0.0/frankenphp-$machine-x86_64"
 
 FILENAME="$SCRIPT_DIR/frankenphp"
 
