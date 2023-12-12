@@ -45,6 +45,12 @@ To run the FrankenPHP server, use the following command:
 ### Step 7: Open Localhost
 After running the server, open your web browser and navigate to https://localhost
 
+### Step 8: gitignore 
+Add this in `.gitignore`
+```sh
+frankenphp
+composer.phar
+```
 
 ### Useful command 
 
