@@ -18,7 +18,7 @@ if [ "$machine" == "unknown" ]; then
     exit 1
 fi
 
-DOWNLOAD_URL="https://github.com/dunglas/frankenphp/releases/download/v1.0.0/frankenphp-${machine}-${arch}"
+DOWNLOAD_URL="https://github.com/dunglas/frankenphp/releases/download/v1.0.2/frankenphp-${machine}-${arch}"
 
 echo "DOWNLOAD_URL: ${DOWNLOAD_URL}"
 
